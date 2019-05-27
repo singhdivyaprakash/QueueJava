@@ -21,7 +21,7 @@ public class ArrayImpOfQueue implements QueueInterface{
         int ele=(int)o;
         int size=size();
         if(size==arr.length-1){
-            int[] arr2=new int[2*size];
+            int[] arr2=new int[2*arr.length];
             System.arraycopy(arr,start,arr2,0,size-start);
             System.arraycopy(arr,0,arr2,size-start,end);
             arr=arr2;

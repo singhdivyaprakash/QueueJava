@@ -11,20 +11,16 @@ package queue;
  */
 public class Tester {
     public static void main(String args[]){
-        ArrayImpOfQueue queue=new ArrayImpOfQueue(4);
+        ArrayImpOfQueue queue=new ArrayImpOfQueue(3);
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
         queue.enqueue(4);
         System.out.println(queue.size());
-       // queue.enqueue(5);
-       // queue.enqueue(6);
-        queue.dequeue();
-        System.out.println(queue.size());
-        queue.enqueue(5);
-        queue.enqueue(6);
-        System.out.println(queue.size());
-        queue.printQueue();
+//        queue.dequeue();
+//        queue.enqueue(5);
+//        queue.enqueue(1);
+        System.out.println(queue.arr.length);
         
     }
 }
